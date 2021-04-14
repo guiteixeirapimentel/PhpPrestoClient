@@ -1,5 +1,5 @@
 {
-  "name": "xtendsys-labs/php-presto-client",
+  "name": "guiteixeirapimentel/php-presto-client",
   "description": "PHP PrestoDB.io Client",
   "minimum-stability": "stable",
   "license": "Apache-2.0",
@@ -16,7 +16,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/Degola/PhpPrestoClient.git"
+      "url": "https://github.com/guiteixeirapimentel/PhpPrestoClient.git"
     }
   ],
   "require": {
