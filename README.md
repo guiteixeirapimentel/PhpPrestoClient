@@ -1,6 +1,12 @@
 PhpPrestoClient
 ===============
 
+# Forked from https://github.com/360d-io-labs/PhpPrestoClient 
+# The only changes made were:
+# - Added schema change through PrestoClient constructor
+# - Added user change through PrestoClient constructor
+# - Added error message to output when the state is incoherent.
+
 Simple Php Class to connect to a PrestoDB Server that runs distributed queries against 
 a Hadoop HDFS cluster.
 Presto uses a subset of SQL as its query language. Presto is an alternative for
