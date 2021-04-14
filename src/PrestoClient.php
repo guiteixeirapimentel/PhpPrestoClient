@@ -55,9 +55,11 @@ class PrestoClient {
 	 * @param $connectUrl
 	 * @param $catalog
 	 */
-	public function __construct($connectUrl,$catalog){
+	public function __construct($connectUrl,$catalog,$prestoSchema="default", $prestoUser="presto"){
 		$this->url = $connectUrl;
 		$this->prestoCatalog = $catalog;
+		$this->prestoSchema=$prestoSchema; // Added schema change through constructor
+		$this->prestoUser=$prestoUser; // Added user change through constructor
 	}
 	/**
 	 * Return Data as an array. Check that the current status is FINISHED
