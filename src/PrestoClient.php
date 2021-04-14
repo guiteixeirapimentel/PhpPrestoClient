@@ -147,8 +147,9 @@ class PrestoClient {
 		}
 		
 		if ($this->state!="FINISHED"){
-			// Added error message to output when the state is incoherent.
-			throw new PrestoException("Incoherent State at end of query".$this->result['message']);}
+			$res = json_decode($this->result);
+			throw new PrestoException("Incoherent State at end of query ".$res->{'error'}->{'message'});
+		}
 		
 		return true;
 		
